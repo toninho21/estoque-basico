@@ -1,0 +1,14 @@
+<%- include('top.ejs') %>
+    <form action="<%= action %>" method="POST">
+      <div class="form-group"> 
+      <p>Codigo:<input type="number" name="codprod" value="<%= doc.codprod %>"/></p>
+      <p>Descriçao:<input type="text" name="descprod" value="<%= doc.descprod %>" /></p>
+      <p>Unidade:<input type="text" name="unidade" value="<%= doc.unidade %>"/></p>
+      <p>Quantidade:<input type="number" name="qtdini" value="<%= doc.qtdini %>" /></p>
+      <p>Mínimo:<input type="number" name="qtdminimo" value="<%= doc.qtdminimo %>" /></p>
+      <p>Fornecedor:<input type="text" name="fornecedor" value="<%= doc.fornecedor %>" /></p>
+    </div>
+      <input type="submit" value="Salvar" class="btn btn-primary"/><a href="/" class="btn">Cancelar</a>
+    </form>
+<%- include('bottom.ejs') %>
+
